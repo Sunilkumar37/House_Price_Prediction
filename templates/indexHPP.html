@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <body style = "background: rgb(217, 57, 231)"> 
+        <h1> House Price Prediction </h1>
+
+        <form action = "/predict" method = "POST">
+            <table id="hprice" class="display" style="width:40%" border="1">
+                <thead>
+                    <tr>
+                        <th>Independent Variables (Features)</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SQUARE_FT:</td>
+                                <td><input type = "number" name = "SQUARE_FT" placeholder = "Enter Square_Ft"/> </td>
+                      </tr>
+                    <tr>
+                        <td>NO OF BEDROOMS:</td>
+                                <td><input type = "number" name = "BHK_NO." placeholder = "Enter No of rooms"/> </td>
+                    </tr>
+                    <tr>
+                        <td>LONGITUDE:</td>
+                                <td><input type = "float" step="0.001" name = "LONGITUDE" placeholder = "Enter longitude in decimal form"/> </td>
+                    </tr>
+                    <tr>
+                        <td>LATITUDE:</td>
+                                <td><input type = "float" step="0.001" name = "LATITUDE" placeholder = "Enter latitude in decimal form"/> </td>
+                    </tr>
+                </tbody>
+     
+            </table>
+        
+        <button type = "House Price Prediction" name = "predict"> Predict Price</button>
+        </form>
+        </body>
+    </head>
+    
+    {{prediction_text}}
+    
+</html>
